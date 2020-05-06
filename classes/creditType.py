@@ -11,13 +11,13 @@ class loanType(BankConditions):
         print("Please choose the type of the loan: ")
         print(self.ctypeList)
         choice = input("Choice: ")
-        if choice is '1':
+        if choice == '1':
             credit.BankConditions.interest = 0.10
             print("Personal loan with 10% interest")
-        elif choice is '2':
+        elif choice == '2':
             credit.BankConditions.interest = 0.07
             print("Auto loan with 7% interest")
-        elif choice is '3':
+        elif choice == '3':
             credit.BankConditions.interest = 0.05
             print("Mortgage with 5% interest")
         else:
